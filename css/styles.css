@@ -152,11 +152,32 @@ img {
 }
 .header-contacts-list {
   display: flex;
+  justify-content: center;
   align-items: center;
 }
+
 .header-mail-link {
-  margin-right: 50px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
   align-items: center;
+  margin-right: 50px;
+}
+.mail-icon {
+  margin-right: 7px;
+  fill: currentColor;
+}
+
+.header-tel-link {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tel-icon {
+  margin-right: 7px;
+  fill: currentColor;
 }
 
 /* Hero */
@@ -346,17 +367,54 @@ img {
   height: 20px;
   fill: #afb1b8;
 }
+/* ПОСТОЯННЫЕ КЛИЕНТЫ */
+.client-title {
+  margin-bottom: 50px;
+}
+.client-list {
+  display: inline-flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
 
+.client-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.client-item + .client-item {
+  margin-left: 30px;
+}
+.client-icon {
+  fill: #afb1b8;
+  display: block;
+}
+.client-link:hover,
+.client-link:focus {
+  border: 1px solid var(--accent-color-bg);
+}
+.client-link:hover .client-icon,
+.client-link:focus .client-icon {
+  fill: var(--bg-color-btn);
+}
 /* Подвал */
 .footer {
-  display: block;
-  justify-content: space-between;
+  display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
   text-align: left;
   background-color: var(--bg-color-first);
   color: var(--color-text-footer);
   letter-spacing: 0.03em;
+}
+.footer-container {
+  display: flex;
 }
 .logo-link-footer {
   display: block;
@@ -370,6 +428,8 @@ img {
   text-decoration: none;
 }
 .address {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 9px;
 }
 .address-link {
@@ -384,6 +444,26 @@ img {
 }
 .footer-tel-link {
   display: block;
+}
+.connect {
+  display: block;
+  padding-top: 12px;
+  margin-left: 70px;
+}
+.connect-social-link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.connect-social-link .social-icon {
+  fill: #ffffff;
+}
+.connect-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-text-footer);
+  margin-bottom: 20px;
 }
 /* ПОРТФОЛИО ФИЛЬТР*/
 .filter {
