@@ -315,6 +315,7 @@ img {
 .team-title-group {
   padding-top: 30px;
   padding-bottom: 30px;
+  background-color: var(--bg-color-title);
 }
 .team-title {
   margin-bottom: 10px;
